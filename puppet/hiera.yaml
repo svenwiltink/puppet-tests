@@ -5,14 +5,3 @@
 :hierarchy:
   - "nodes/%{::hostname}"
   - "common"
-
-:backends:
-  - yaml
-:yaml:
-  :datadir: "/etc/puppet/hieradata"
-:hierarchy:
-  - "nodes/%{hostname}"
-  - "common"
-:logger: console
-:merge_behavior: native
-:deep_merge_options: {}
