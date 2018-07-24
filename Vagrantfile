@@ -8,8 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :puppet do |puppet|
         puppet.manifests_path = "puppet/manifests"
         puppet.manifest_file = "init.pp"
-        puppet.module_path = "puppet/modules"
         puppet.hiera_config_path = "puppet/hiera.yaml"
-        puppet.options = ['--verbose', '--debug']
+        puppet.options = ['--modulepath=/etc/puppet/modules', '--verbose', '--debug']
   end
 end

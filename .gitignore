@@ -1,2 +1,6 @@
 .vagrant
+.librarian
 .idea
+.tmp/
+modules/
+*.log

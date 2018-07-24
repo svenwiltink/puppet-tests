@@ -1,0 +1,19 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    golja-influxdb (4.0.0)
+      puppetlabs-apt (< 3.0.0, >= 1.8.0)
+      puppetlabs-stdlib (>= 1.0.0)
+    puppetlabs-apt (2.4.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
+    puppetlabs-stdlib (4.25.1)
+
+PATH
+  remote: ./puppet/modules/screen
+  specs:
+    swiltink-screen (0.0.1)
+
+DEPENDENCIES
+  golja-influxdb (= 4.0.0)
+  swiltink-screen (>= 0)
+
